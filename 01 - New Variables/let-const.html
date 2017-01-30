@@ -6,9 +6,10 @@
 </head>
 <body>
 <script>
+  //Cannot declare const and let twice in scope.
   const key = 'abc123';
   let points = 50;
-  let winner = false;
+  let winner = false;//scope to the window
 
   const person = {
     name: 'Wes',

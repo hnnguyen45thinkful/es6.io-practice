@@ -6,17 +6,58 @@
 </head>
 <body>
 <script>
+  //Let and const are block scopes.
+  //Example of a Block.
   {
     const name = 'wes';
     console.log(name);
   }
-
+  //For loop with let. 
   for(let i = 0; i < 10; i++) {
     console.log(i);
     setTimeout(function() {
       console.log('The number is ' + i);
-    },1000);
+    },1000);//1000 == 1 second
   }
+ // 0
+ // 1
+ // 2 
+ // 3
+ // 4
+ // 5
+ // 6
+ // 7
+ // 8
+ // 9
+ // The number is 0
+ // The number is 1
+ // The number is 2
+ // The number is 3
+ // The number is 4
+ // The number is 5
+ // The number is 6
+ // The number is 7
+ // The number is 8
+ // The number is 9
+//Different results with var instead of let.
+// for(var i = 0; i < 10; i++) {
+//     console.log(i);
+//     setTimeout(function() {
+//       console.log('The number is ' + i);
+//     },1000);//1000 == 1 second
+//   }
+// 0
+// 1
+// 2
+// 3
+// 4
+// 5
+// 6
+// 7
+// 8
+// 9
+// The number is 10.
+
 
 </script>
 </body>

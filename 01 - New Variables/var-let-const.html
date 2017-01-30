@@ -6,16 +6,18 @@
 </head>
 <body>
 <script>
+//var (update/redefined), New to ES6 'let' and 'constant (const)' to declare variables.
   function setWidth() {
     var width = 100;
-    console.log(width);
+    console.log(width); //100
   }
   setWidth();
 
+  //Example if statements dog years
   var age = 100;
   if(age > 12) {
-    const dogYears = age * 7;
-    console.log(`You are ${dogYears} dog years old!`);
+    const dogYears = age * 7; //dogYears = 700
+    console.log(`You are ${dogYears} dog years old!`); // You are 700 dog years old!
   }
 
   let height = 200;
