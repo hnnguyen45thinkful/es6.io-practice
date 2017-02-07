@@ -61,18 +61,19 @@
   </div>
 
   <script>
+    //Create box const and select query selector
     const box = document.querySelector('.box');
-    box.addEventListener('click', function() {
-      let first = 'opening';
+    box.addEventListener('click', function() { //No arrow function creates Windows not rebounded and inherited and not a parent scoping.
+      let first = 'opening'; //Used two variables because opening the box (first) and second open(switch)
       let second = 'open';
 
       if(this.classList.contains(first)) {
-        [first, second] = [second, first];
+        [first, second] = [second, first];//switch the values opening and closing.
       }
 
       this.classList.toggle(first);
-      setTimeout(() => {
-        console.log(this);
+      setTimeout(() => { //It inherits the parents and scopes
+        console.log(this);//Box is clicked.
         this.classList.toggle(second);
       }, 500);
     });

@@ -6,14 +6,15 @@
 </head>
 <body>
 <script>
+//items in the array with ages..
   const ages = [32, 15, 19, 12];
 
   // 👵👨 is there at least one adult in the group?
-  const adultPresent = ages.some(age => age >= 18);
+  const adultPresent = ages.some(age => age >= 18);///.some takes the age to choose and check true or false for at least one of the .some.
   console.log(adultPresent);
 
   // 🍻 is everyone old enough to drink?
-  const allOldEnough = ages.every(age => age >= 19);
+  const allOldEnough = ages.every(age => age >= 19);//.every check for ALL
   console.log(allOldEnough);
 
 

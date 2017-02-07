@@ -25,9 +25,11 @@
   //     console.log(weatherInfo, tweetInfo)
   //   });
 
+  //Working with two APIs and examples on top.
+
   const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
   const streetCarsPromise = fetch('http://data.ratp.fr/api/datasets/1.0/search/?q=paris');
-
+//Start with promises
   Promise
     .all([postsPromise, streetCarsPromise])
     .then(responses => {

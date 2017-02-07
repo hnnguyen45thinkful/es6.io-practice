@@ -10,8 +10,14 @@
   const featured = ['Deep Dish', 'Pepperoni', 'Hawaiian'];
   const specialty = ['Meatzza', 'Spicy Mama', 'Margherita'];
 
-  const pizzas = [...featured, 'veg', ...specialty];
-  const fridayPizzas = [...pizzas];
+  const pizzas = [...featured, 'veg', ...specialty]; // use ... to spread. //Use const and not let to overide it.
+  //const pizzas = featured.concat(specialty); //combined both featured and specialty.
+  //let pizzas = [];
+  //pizzas = pizzas.concat(featured);
+  //pizzas.push('veg');
+  //pizzas = pizzas.concat(specialty);
+  //console.log(pizzas);
+  const fridayPizzas = [...pizzas];//[].concat(pizzas);
 
   const deepDish = {
     pizzaName: 'Deep Dish',

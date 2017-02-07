@@ -23,6 +23,8 @@
       cursor:url('http://csscursor.info/source/santahand.png'), default;
     }
     .jump span:hover {
+      /*color: black;*/ /*check answer to work*/
+      /*display: incline-block*/ /*check answer to work*/
       transform:translateY(-20px) scale(2) rotate(10deg);
       z-index: 1;
     }
@@ -32,8 +34,9 @@
   <h2 class="jump">SPREADS!</h2>
 
 <script>
+//Solutions...
   const heading = document.querySelector('.jump');
-  heading.innerHTML = sparanWrap(heading.textContent);
+  heading.innerHTML = sparanWrap(heading.textContent);//last step and use heading
 
   function sparanWrap(word) {
     return [...word].map(letter => `<span>${letter}</span>`).join('');

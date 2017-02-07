@@ -2,32 +2,38 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Arrow functions → → </title>
+  <title>Arrow functions → → </title> 
 </head>
 <body>
 <script>
+//Arrows functions are always annonmyus functions 
   const names = ['wes', 'kait', 'lux'];
-
+  //
   const fullNames = names.map(function(name) {
-    return `${name} bos`;
+    return `${name} bos`; //explictlly returns
   });
-
+  //console.log(fullNames);
+  //["wes bos", "kait bos", "lux bos"] 
   const fullNames2 = names.map((name) => {
     return `${name} bos`;
   });
-
+  //console.log(fullNames2); 
+  //["wes bos", "kait bos", "lux bos"]
   const fullNames3 = names.map(name => {
     return `${name} bos`;
   });
-
-  const fullNames4 = names.map(name => `${name} bos`);
+  //console.log(fullNames3); 
+//["wes bos", "kait bos", "lux bos"]
+  const fullNames4 = names.map(name => `${name} bos`);//Implictlly returns
+  //console.log(fullNames4); 
 
   const fullNames5 = names.map(() => `cool bos`);
+  //console.log(fullNames5); 
 
   const sayMyName = (name) => {
     alert(`Hello ${name}!`)
   }
-
+//Hello Wes! (pop-up window)
   sayMyName('Wes');
 
 </script>

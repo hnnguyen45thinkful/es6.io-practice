@@ -1,0 +1,11 @@
+github.com/airbnb/javascript/
+
+the eslint file in the click "packages" and then "eslint-config-airbnb"
+
+eslint bad-code.js
+
+install the eslint-config-airbnb
+
+npm install -g eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
+
+eslint bad-code.js

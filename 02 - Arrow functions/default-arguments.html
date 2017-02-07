@@ -7,11 +7,22 @@
 <body>
 <script>
   function calculateBill(total, tax = 0.13, tip = 0.15) {
+   // if (tax === undefined) {
+   // 		tax = 0.13;
+   // }
+   //  if (tax === undefined) {
+   // 		tax = 0.15;
+   // }
+   //128
+
+ //tax = tax || 0.13;
+ //tax = tax || 0.15;
+   //128
     return total + (total * tax) + (total * tip);
   }
 
   const totalBill = calculateBill(100, undefined, 0.25);
-  console.log(totalBill);
+  console.log(totalBill);//138
 </script>
 </body>
 </html>

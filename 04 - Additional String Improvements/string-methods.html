@@ -16,13 +16,31 @@ const model = 'x5';
 const colour = 'Royal Blue';
 
 // .startsWith()
+//course.startsWith("RFB")
+//True
+//course.startsWith("rfb")
+//False
+//flightNumber.startsWith('AC')
+//false
+//flightNumber.startsWith('AC', 3)
+//True
 
 // .endsWith()
+//flightNumber.endsWith('jz')
+//True
+//accountNumber.endsWith("RT")
+//false
+//accountNumber.endsWith("RT", 11)
+//true
 
 // .includes()
+//flightNumber.includes('AC')
+//True
+//flightNumber.includes('ac')
+//false
 
 // .repeat()
-
+//"snakes".repeat(1000) 
 function leftPad(str, length = 20) {
   return `→ ${' '.repeat(length - str.length)}${str}`;
 }

@@ -8,14 +8,15 @@
 <script>
 
 const race = '100m Dash';
-const winners = ['Hunter Gath', 'Singa Song', 'Imda Bos'];
-
-const win = winners.map((winner, i) => ({name: winner, race, place: i + 1}));
-
+const winners = ['Hunter Gath', 'Singa Song', 'Imda Bos'];//Creating 1st, 2nd, and 3rd.
+//Using map function callback used to get a return object.
+const win = winners.map((winner, i) => ({name: winner, race, place: i + 1}));//return objects for winners
+//console.table(win) shows table.
+//Create ages
 const ages = [23,62,45,234,2,62,234,62,34];
-
+//Create filter ages and console.log(old);
 const old = ages.filter(age => age >= 60);
-console.log(old);
+console.log(old);//[62, 234, 62, 234, 62]
 
 </script>
 </body>

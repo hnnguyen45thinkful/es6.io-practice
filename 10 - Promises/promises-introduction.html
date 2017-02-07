@@ -6,12 +6,15 @@
 </head>
 <body>
 <script>
+//Using fetch similar to $.getJSON and $.ajax
+//A promise something that will happen in the future.
+//Asynchonous.  
 const postsPromise = fetch('http://wesbos.com/wp-json/wp/v2/posts');
-
+//Applying listening...
 postsPromise
   .then(data => data.json())
   .then(data => { console.log(data) })
-  .catch((err) => {
+  .catch((err) => { //Apply .catch error
     console.error(err);
   })
 

@@ -14,15 +14,15 @@
 <script>
   // When you really need `this`
   const button = document.querySelector('#pushy');
-  button.addEventListener('click', function() {
+  button.addEventListener('click', function() { //create a push button
     console.log(this);
-    this.classList.toggle('on');
+    this.classList.toggle('on');//
   });
 
   // When you need a method to bind to an object
   const person = {
     points: 23,
-    score() {
+    score() { // or use score : function() { }
       console.log(this);
       this.points++;
     }
@@ -36,15 +36,15 @@
     }
   }
 
-  const beemer = new Car('bmw', 'blue');
+  const beemer = new Car('bmw', 'blue'); //(make, color)
   const subie = new Car('Subaru', 'white');
 
-  Car.prototype.summarize = function() {
+  Car.prototype.summarize = function() {  //use a regular function instead of fat arrow function because of this object
      return `This car is a ${this.make} in the colour ${this.colour}`;
   };
 
   // When you need arguments object
-  const orderChildren = function() {
+  const orderChildren = function() {  //use regular function for arguements.
     const children = Array.from(arguments);
     return children.map((child, i) => {
       return `${child} was child #${i + 1}`;
