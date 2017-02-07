@@ -26,7 +26,10 @@
 //   },
 //   
 // }
-var weather = new Promise((resolve) => {
+
+//globals twttr ga (global ann.)//
+//eslint disable no extend native.
+const weather = new Promise((resolve) => {
   setTimeout(() => {
     resolve({ temp: 29, conditions: 'Sunny with Clouds' });
   }, 2000);
@@ -56,3 +59,6 @@ Promise
   .then(responses => {
     console.log(responses);
   });
+
+
+

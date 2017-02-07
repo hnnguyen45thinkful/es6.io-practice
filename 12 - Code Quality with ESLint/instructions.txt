@@ -9,3 +9,8 @@ install the eslint-config-airbnb
 npm install -g eslint-config-airbnb eslint-plugin-import eslint-plugin-react eslint-plugin-jsx-a11y
 
 eslint bad-code.js
+
+
+eslint code-in-html.html
+
+eslint *.md
