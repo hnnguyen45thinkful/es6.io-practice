@@ -6,6 +6,7 @@
 </head>
 <body>
 <script>
+//New safety object.
   const safeHandler = {
     set(target, name, value) {
       const likeKey = Object.keys(target).find(k => k.toLowerCase() === name.toLowerCase());

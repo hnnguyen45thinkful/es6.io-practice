@@ -8,13 +8,13 @@
 <script>
   function* listPeople() { //using the * in front of the function.
     let i = 0;
-    yield i;
+    yield i;//return the one item
     i++;
     yield i;
     i++;
     yield i;
   }
-
+//store the variable to generate.
   const people = listPeople();
 
   const inventors = [
@@ -26,7 +26,7 @@
     { first: 'Nicolaus', last: 'Copernicus', year: 1473 },
     { first: 'Max', last: 'Planck', year: 1858 },
   ];
-
+//Iterates to the arrays in the loop 
   function* loop(arr) {
     console.log(inventors);
     for (const item of arr) {

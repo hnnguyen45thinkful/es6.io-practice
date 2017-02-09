@@ -5,9 +5,11 @@
   <title>Proxies!</title>
 </head>
 <body>
-<script>
+<script>//Overiding the default behavior in an operation.
+//Create proxy for an object in the target.
   const person = { name: 'Wes', age: 100 };
-  const personProxy = new Proxy(person, {
+  const personProxy = new Proxy(person, { //get a proxy in an object 
+    //Using TRAPS
     get(target, name) {
       // console.log('someone is asking for ', target, name);
       return target[name].toUpperCase();

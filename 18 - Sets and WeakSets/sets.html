@@ -6,15 +6,20 @@
 </head>
 <body>
 <script>
+//Lists of items in a set 
   const people = new Set();
   people.add('Wes');
   people.add('Snickers');
   people.add('Kait');
-
+//set {"wes","snickers","kai"}
+//people.size 
+  //3
+  people.delete('wes')
+  //set {snickers","kai"}
   for (const person of  people) {
     console.log(person);
   }
-
+//Lists in a class of students
   const students = new Set(['Wes', 'Kara', 'Tony']);
 
   const dogs = ['Snickers', 'Sunny'];
