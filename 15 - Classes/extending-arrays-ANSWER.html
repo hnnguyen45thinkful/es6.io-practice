@@ -6,26 +6,29 @@
 </head>
 <body>
 <script>
-  class MovieCollection extends Array {
+//Creates movie collections with extends array
+  class MovieCollection extends Array { // ... rest of the items
     constructor(name, ...items) {
       super(...items);
       this.name = name;
     }
+    //methods...
     add(movie) {
       this.push(movie);
     }
+    //methods...
     topRated(limit = 10) {
       return this.sort((a, b) => (a.stars > b.stars ? -1 : 1)).slice(0, limit);
     }
   }
-
+//Create a movie names and ratings with properties.
   const movies = new MovieCollection('Wes\'s Fav Movies',
     { name: 'Bee Movie', stars: 10 },
     { name: 'Star Wars Trek', stars: 1 },
     { name: 'Virgin Suicides', stars: 7 },
     { name: 'King of the Road', stars: 8 }
   );
-
+//Adding a new movie.
   movies.add({ name: 'Titanic', stars: 5 });
 </script>
 </body>

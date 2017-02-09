@@ -10,17 +10,19 @@
     this.name = name;
     this.breed = breed;
   }
+  //Create prototype method with a function
   Dog.prototype.bark = function() {
     console.log(`Bark Bark! My name is ${this.name}`)
   }
-
+//Naming a new Dog name and breed
+//Proto. Inher. 
   const snickers = new Dog('Snickers', 'King Charles');
   const sunny = new Dog('Sunny', 'Golden Doodle');
-
+//Overriding it on the bottom instead of the top.
   Dog.prototype.bark = function() {
     console.log(`Bark Bark🇨🇦🇨🇦🇨🇦! My name is ${this.name} and I'm a ${this.breed}`);
   }
-
+//Same but with cuddle
   Dog.prototype.cuddle = function() {
     console.log(`I love you owner!`);
   }

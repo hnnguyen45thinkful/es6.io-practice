@@ -6,11 +6,12 @@
 </head>
 <body>
 <script>
+//Create an animal base class
   class Animal {
     constructor(name) {
       this.name = name;
       this.thirst = 100;
-      this.belly = [];
+      this.belly = [];//empty stomach
     }
     drink() {
       this.thirst -= 10;
@@ -21,17 +22,18 @@
       return this.belly;
     }
   }
-
+//no if statements create another class with "extends"
   class Dog extends Animal {
     constructor(name, breed) {
+      //this.name = name; //error need to change and create with super(name);
       super(name);
       this.breed = breed;
-    }
+    }//Add Methods such as bark, bite, jumpy, etc...
     bark() {
       console.log('BARK BARK BARK!');
     }
   }
-
+//New Animals for the class Animal.
   const rhino = new Animal('Rhiney');
   const snickers = new Dog('Snickers', 'King Charles');
 </script>

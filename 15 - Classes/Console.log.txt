@@ -1,0 +1,9 @@
+Console.log
+//Create new array for proto. inher.
+const names = ['wes', 'kait']
+names.join('')
+//'weskait'
+names.pop()
+//'kait'
+Array
+//function Array() {[native code]}
