@@ -1,0 +1,29 @@
+Example from babeljs.io/repl/
+
+Evaluating the codes
+
+ES6
+
+const age = 100;
+const people = ['Wes', 'Kait'];
+
+const fullNames = people.map(name => `${name} Bos`);
+
+ES5 translate
+
+'use strict'
+
+var age = 100;
+var people = ['Wes', 'Kait'];
+
+var fullNames = people.map(function (name) {
+	
+	return name + ' Bos';
+});
+
+//No arrays are converted.
+//Look Array.from() mozilla developer website.
+//Look Polyfill from mozilla developer website
+
+babeljs.io/docs/usage/polyfill/
+polyfill.io/v2/docs/
