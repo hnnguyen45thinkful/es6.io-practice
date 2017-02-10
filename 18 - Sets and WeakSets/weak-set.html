@@ -6,13 +6,14 @@
 </head>
 <body>
 <script>
+//Naming different dogs names with age unique.
   let dog1 = { name: 'Snickers', age: 3 };
   let dog2 = { name: 'sunny', age: 1 };
-
+//Creating a new weakset for a variable.
   const weakSauce = new WeakSet([dog1, dog2]);
 
   console.log(weakSauce);
-  dog1 = null;
+  dog1 = null;//delete from set objects
   console.log(weakSauce);
 
 </script>

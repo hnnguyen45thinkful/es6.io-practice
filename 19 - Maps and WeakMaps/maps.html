@@ -7,13 +7,20 @@
 <body>
 <script>
   const dogs = new Map();
-
+//dogs.has("Snickers")
+//Snickers
+//dogs.get("Snickers")
+//3
+//dogs.delete('Hugo')
+//true
+//dogs
+//Map {"Snickers" => 3, "Sunny" => 2}
   dogs.set('Snickers', 3);
   dogs.set('Sunny', 2);
   dogs.set('Hugo', 10);
-
+//Show the value and key for each dogs.set
   dogs.forEach((val, key) => console.log(val, key));
-
+//Put in for loop in Array
   for (const [key, val] of dogs) {
     console.log(key, val);
   }
